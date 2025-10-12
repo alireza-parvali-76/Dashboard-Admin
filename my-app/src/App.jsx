@@ -1,6 +1,8 @@
 import React from 'react'
-import routes from './routes.js'
+import routes from './routes'
 import { useRoutes } from 'react-router-dom'
+import Topbar from './components/topbar.js/Topbar'
+import Sidebar from './components/sidebar/Sidebar'
 import './App.css'
 
 function App() {
@@ -9,8 +11,11 @@ function App() {
 
   return (
     <>
-    <h1>test</h1>
-      {router}
+      <Topbar />
+      <div className='container'>
+        <Sidebar />
+        {router}
+      </div>
     </>
   )
 }
