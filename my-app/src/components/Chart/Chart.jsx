@@ -9,9 +9,9 @@ import {
     Tooltip
 } from 'recharts'
 
-export default function Chart({title, data, dataKey, grid}){
+export default function Chart({title, data, dataKey, grid, height }){
     return(
-        <div className="chart">
+        <div className="chart" style={{ height: height }}>
             <h3 className="chartTitle">{title}</h3>
             <ResponsiveContainer width= '100%' aspect={4}>
                 <LineChart data={data}>

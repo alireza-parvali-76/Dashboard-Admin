@@ -16,7 +16,7 @@ export default function Products() {
         </div>
         <div className="productTop">
           <div className="productTopLeft">
-            <Chart title='Sale In Month' data={productData} dataKey='sales' />
+            <Chart title='Sale In Month' data={productData} dataKey='sales' height="200px"/>
           </div>
           <div className="productTopRight">
             <div className="productInfoTop">
